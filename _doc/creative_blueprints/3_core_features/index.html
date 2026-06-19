@@ -1,0 +1,79 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="inline-block bg-slate-100 text-slate-500 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-3">Core Features</span>
+      <h2 class="text-3xl font-black text-slate-900">Built for Casual Players</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-7">
+      <span class="bg-indigo-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">🎮 Casual Player</span>
+      <span class="bg-slate-100 text-slate-400 text-sm font-medium px-4 py-1.5 rounded-full">Friends & Family</span>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="grid gap-4 flex-1 min-h-0" style="grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(2,1fr);">
+
+      <div class="bg-indigo-50 rounded-2xl p-5 flex flex-col gap-2 border border-indigo-100">
+        <div class="w-9 h-9 bg-indigo-600 rounded-xl flex items-center justify-center mb-1">
+          <span class="text-white text-base font-black">#</span>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">3×3 Game Board</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Large, tappable cells. Players alternate placing X and O — visually distinct at every turn.</p>
+      </div>
+
+      <div class="bg-rose-50 rounded-2xl p-5 flex flex-col gap-2 border border-rose-100">
+        <div class="w-9 h-9 bg-rose-500 rounded-xl flex items-center justify-center mb-1">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">Win Detection</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Instantly detects three in a row — horizontal, vertical, or diagonal — and highlights the winning line.</p>
+      </div>
+
+      <div class="bg-amber-50 rounded-2xl p-5 flex flex-col gap-2 border border-amber-100">
+        <div class="w-9 h-9 bg-amber-500 rounded-xl flex items-center justify-center mb-1">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">Score Tracker</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Running tally of X wins, O wins, and draws — persists across rounds in the same session.</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2 border border-slate-200">
+        <div class="w-9 h-9 bg-slate-700 rounded-xl flex items-center justify-center mb-1">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">Draw Detection</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Recognises a full board with no winner and announces a draw — no ambiguity, ever.</p>
+      </div>
+
+      <div class="bg-emerald-50 rounded-2xl p-5 flex flex-col gap-2 border border-emerald-100">
+        <div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center mb-1">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m0 14v1m8-8h-1M5 12H4m13.657-6.343l-.707.707M7.05 16.95l-.707.707m11.314 0l-.707-.707M7.05 7.05l-.707-.707"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">Turn Indicator</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Always shows whose turn it is — X or O — so there's no guessing mid-game.</p>
+      </div>
+
+      <div class="bg-violet-50 rounded-2xl p-5 flex flex-col gap-2 border border-violet-100">
+        <div class="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center mb-1">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-sm">New Game</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">One-click restart clears the board while keeping the running score — rematch in seconds.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
