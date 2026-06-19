@@ -71,5 +71,57 @@ export const configurableSchemas: ConfigurableSchemas = {
         },
       ],
     },
+    {
+      fieldName: "gameTitle",
+      type: "string",
+      required: false,
+      label: "Game Title",
+      minLength: 1,
+      maxLength: 60,
+    },
+    {
+      fieldName: "playerX",
+      type: "object",
+      required: false,
+      label: "Player X",
+      fields: [
+        {
+          fieldName: "name",
+          type: "string",
+          required: true,
+          label: "Name",
+          minLength: 1,
+          maxLength: 20,
+        },
+        {
+          fieldName: "color",
+          type: "color",
+          required: true,
+          label: "Color",
+        },
+      ],
+    },
+    {
+      fieldName: "playerO",
+      type: "object",
+      required: false,
+      label: "Player O",
+      fields: [
+        {
+          fieldName: "name",
+          type: "string",
+          required: true,
+          label: "Name",
+          minLength: 1,
+          maxLength: 20,
+        },
+        {
+          fieldName: "color",
+          type: "color",
+          required: true,
+          label: "Color",
+        },
+      ],
+    },
   ],
 };

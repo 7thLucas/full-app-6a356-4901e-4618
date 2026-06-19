@@ -12,14 +12,18 @@ export type TBrandColor = {
   accent: string;
 };
 
+export type TPlayerConfig = {
+  name: string;
+  color: string;
+};
+
 export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  gameTitle?: string;
+  playerX?: TPlayerConfig;
+  playerO?: TPlayerConfig;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
@@ -29,6 +33,15 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
     primary: "FILL_PRIMARY_COLOR_HERE",
     secondary: "FILL_SECONDARY_COLOR_HERE",
     accent: "FILL_ACCENT_COLOR_HERE",
+  },
+  gameTitle: "Tic Tac Toe",
+  playerX: {
+    name: "Player X",
+    color: "#6366f1",
+  },
+  playerO: {
+    name: "Player O",
+    color: "#f43f5e",
   },
   // ─────────────────────────────────────────────────────────────────────
   // Add new field defaults here. See RULES.md §5 for per-type shape.
