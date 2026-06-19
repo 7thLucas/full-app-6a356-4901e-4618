@@ -1,0 +1,108 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="inline-block bg-slate-100 text-slate-500 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-3">Foundation</span>
+      <h2 class="text-3xl font-black text-slate-900">Why This Exists</h2>
+    </div>
+
+    <!-- Split body -->
+    <div class="sl-layout flex gap-8 flex-1 min-h-0">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center">
+            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M12 3a9 9 0 100 18A9 9 0 0012 3z"/>
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-rose-600 uppercase tracking-wide">The Problem</h3>
+        </div>
+        <div class="bg-rose-50 rounded-2xl p-6 flex-1 border border-rose-100">
+          <p class="text-slate-700 text-base leading-relaxed mb-5">
+            Every time you want a quick Tic Tac Toe game, you face the same wall: mandatory account creation, intrusive ads, slow-loading apps, and UI buried under feature bloat.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-rose-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-rose-600 text-xs font-bold">✕</span>
+              </span>
+              <span class="text-slate-600 text-sm">Sign up just to play a 2-minute game</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-rose-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-rose-600 text-xs font-bold">✕</span>
+              </span>
+              <span class="text-slate-600 text-sm">Ads interrupting every round</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-rose-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-rose-600 text-xs font-bold">✕</span>
+              </span>
+              <span class="text-slate-600 text-sm">Cluttered UI hiding the actual game</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-rose-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-rose-600 text-xs font-bold">✕</span>
+              </span>
+              <span class="text-slate-600 text-sm">No score memory across rounds</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center">
+            <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-indigo-600 uppercase tracking-wide">The Solution</h3>
+        </div>
+        <div class="bg-indigo-50 rounded-2xl p-6 flex-1 border border-indigo-100">
+          <p class="text-slate-700 text-base leading-relaxed mb-5">
+            Tic Tac Toe — a pure, browser-based game that loads instantly, tracks your score, and gets out of your way. Open the tab. Play. That's the entire flow.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-indigo-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-indigo-700 text-xs font-bold">✓</span>
+              </span>
+              <span class="text-slate-600 text-sm">Zero signup — open and play instantly</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-indigo-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-indigo-700 text-xs font-bold">✓</span>
+              </span>
+              <span class="text-slate-600 text-sm">No ads, no popups, no distractions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-indigo-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-indigo-700 text-xs font-bold">✓</span>
+              </span>
+              <span class="text-slate-600 text-sm">Clear board, highlighted winning line</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-indigo-200 flex-shrink-0 flex items-center justify-center">
+                <span class="text-indigo-700 text-xs font-bold">✓</span>
+              </span>
+              <span class="text-slate-600 text-sm">Running score across multiple rounds</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
